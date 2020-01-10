@@ -35,8 +35,9 @@ table{
 }
 
 iframe{
-  width:500px;
-  height: 500px;
+  width:70%;
+  height:500px;
+  
 }
 
 .name{
@@ -44,9 +45,8 @@ iframe{
 }
 .c{
 width: 300px;
-border-color:green;
+border-color:#f8faf0;
 border-width: 3px;
-background-color:white;
 }
 
 .t{
@@ -64,4 +64,130 @@ background-color:white;
 .rite{
   text-align: center;
   width: 500px;
+}
+
+.span{
+  font-size: 250%;
+  line-height: 100%;
+}
+
+.box
+{
+  width: 150px;
+  padding: 10px;
+}
+.box:hover
+{
+  -moz-box-shadow: 0 0 10px #ccc;
+  -webkit-box-shadow: 0 0 10px #ccc;
+   box-shadow: 0 0 10px #ccc;
+}
+
+/* normal button style */
+.myButton {
+  width: 110px;
+  height: 30px;
+  background-color:#80bd91;
+  text-align: center;
+  color: green;
+  position: relative;
+}
+/* button hover style if required */
+.myButton:hover {
+ color:green;
+}
+/* generated element for shine effect.
+* normal state is semi-transparent
+* white but with zero width. Set no
+* transition here for no mouse-leave
+* animations. Otherwise the effect
+* will play in reverse when your mouse
+* leaves the element
+*/
+.myButton:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0%;
+  height: 100%;
+  background-color: rgba(255,255,255,0.4);
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
+ 
+}
+/* on hover we animate the width to
+* 100% and opacity to 0 so the element
+* grows and fades out
+*/
+.myButton:hover:after {
+  width: 120%;
+  background-color: rgba(255,255,255,0);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+
+
+
+.myButton2 {
+  background-color:white;
+  text-align: center;
+  color: #FFF;
+  position: relative;
+}
+/* button hover style if required */
+.myButton2:hover {
+ color:green;
+}
+/* generated element for shine effect.
+* normal state is semi-transparent
+* white but with zero width. Set no
+* transition here for no mouse-leave
+* animations. Otherwise the effect
+* will play in reverse when your mouse
+* leaves the element
+*/
+.myButton2:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0%;
+  height: 100%;
+  background-color: rgba(255,255,255,0.4);
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
+ 
+}
+/* on hover we animate the width to
+* 100% and opacity to 0 so the element
+* grows and fades out
+*/
+.myButton2:hover:after {
+  width: 120%;
+  background-color: rgba(255,255,255,0);
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+table, td{
+  padding: 15px;
+}
+
+.nav{
+  font-size: 100%;
+  text-decoration: none;
 }
