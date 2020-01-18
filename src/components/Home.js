@@ -9,6 +9,8 @@ import vue from '../vue.png'
 import html from '../html.png'
 import css from '../css.png' 
 import js from '../js.png' 
+import c from '../C.png'
+import resume from '../resume.pdf'
 import { Tooltip } from '@material-ui/core';
 import { Button } from 'reactstrap';
 
@@ -16,22 +18,23 @@ import { Button } from 'reactstrap';
 const Home = () => {
             
     return (
-        <div className = "container">
+        <div className="container">
             <div>
-                <h6>Hi! My name is Nathalie. I'm currently a second year Computer Science Co-op student at 
+                <h5>Hi! My name is Nathalie. I'm currently a second year Computer Science Co-op student at 
                 Ryerson University looking for a Summer 2020 placement that will help me grow and learn as a programmer.
-                </h6>
+                </h5>
                 <br></br>
                 <img className="img-rounded" style={{width:"20%"}} src={me} alt="A photo of me"/>
                 <br></br>
                 <br></br>
-                <a href="resume.pdf" target="_blank"><button type="button" className="btn, c, myButton">Resume</button></a>
+                <a href={resume} target="_blank"><button type="button" className="btn, c, myButton">Resume</button></a>
             </div>
 
             <h4>Skills and Tools</h4>
-            <h5>These are some skills and tools I've used.</h5>
-            <div class="w3-panel w3-border w3-round-xlarge">
+            <h5>These are some languages and frameworks I have used.</h5>
+            <div className="brdr">
             <table align="center" className="w3-centered, hello">
+            <tr><th></th><th></th></tr>
             <tr>
                 <td className="myButton2" ><img style={{width:"15%"}} src={css} alt="css"/></td>
                 <td className="myButton2"><img style={{width:"15%"}} src={html} alt="html"/></td>
@@ -52,13 +55,18 @@ const Home = () => {
                 <td className="myButton2"><img style={{width:"15%"}} src={js} alt="javascript"/></td>
                 <td className="myButton2"><img style={{width:"15%"}} src={bootstrap} alt="bootstrap"/></td>
             </tr>
+            <tr>
+                <td className="myButton2"><img style={{width:"15%"}} src={c} alt="c"/></td>
+                <td></td>
+            </tr>
             </table>
             </div>
             
             <br></br>
             <h4>Relevant courses I've taken at Ryerson University </h4>
-            <div class="w3-panel w3-border w3-round-xlarge w3-centered">
+            <div class="brdr">
             <table align="center">
+            <tr><th></th><th></th><th></th></tr>
                 <tr>
                 <Tooltip arrow="true" placement='top' 
                 title={<div className="span"><p></p><p>This course presents the concepts and applications of the technologies to 
@@ -103,7 +111,7 @@ const Home = () => {
                 </tr>
                 <tr>
                 <Tooltip arrow="true" placement='top' 
-                title={<div className="span"><p></p><p>A continuation of CPS 109. Emphasis is placed on code structure, algorithm development, 
+                title={<div className="span" ><p></p><p>A continuation of CPS 109. Emphasis is placed on code structure, algorithm development, 
                     and Object Oriented design principles. Introduction to Java.</p></div>} 
                 enterDelay={500} leaveDelay={200}><td>CPS209: Computer Science II (java)</td></Tooltip>
                     
@@ -126,8 +134,9 @@ const Home = () => {
             </div>
             <br></br>
             <h4>Courses I'm currently taking</h4>
-            <div class="w3-panel w3-border w3-round-xlarge w3-centered">
+            <div class="brdr">
             <table align="center">
+                <tr><th></th><th></th></tr>
                 <tr>
                 <Tooltip arrow="true" placement='top' 
                 title={<div className="span"><p></p><p>Introduction to O/S (system calls, interrupts, synchronous and asynchronous traps, 
@@ -161,6 +170,7 @@ const Home = () => {
             </table>
             </div>
             <a target="_blank" href="https://icons8.com/icons/set/vue-js">Vue Js</a>, <a target="_blank" href="https://icons8.com/icons/set/react">React</a> and other icons by <a target="_blank" href="https://icons8.com">Icons8</a>
+            <a target="_blank" href="https://icons8.com/icons/set/menu">Menu icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
         </div>
     )
 }
